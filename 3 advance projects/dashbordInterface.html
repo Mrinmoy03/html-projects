@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+</head>
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,500;1,600;1,700&display=swap');
+      
+    body {
+			background-color: #f3eaea;
+			font-family:poppins;
+			margin: 0;
+            padding: 0;
+            color: #333;}
+    header{
+                background-color:#191919 ;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+    nav{
+        background-color:#750E21 ;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+    nav a:hover{
+        color:#e3d61d ;
+        box-shadow: 2px 5px 10px rgb(31, 1, 1);
+        border-radius: 20px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: space-between;
+
+    }
+    section{
+        background-color: #BED754;
+        flex: 1 1 300px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        padding-left: 15px;
+        color: #050b79;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+     section:hover{
+        transform:scale(1.05);
+        background-color: #a0b547;
+        color: white;
+    }
+    h2{
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    .chart{
+        height: 200px;
+        width: 400px;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        
+    }
+    
+    .search {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 97%;
+            box-sizing: border-box;
+        border-radius: 15px;}
+article{
+    padding: 20px;
+}
+article img{
+    max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+}
+footer {
+            background-color: #E3651D;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
+            
+</style>
+<body>
+    <header>
+        <h1>Extended Dashboard</h1>
+    </header>
+    <nav>
+        <a href="#section1">Charts</a>
+        <a href="#section2">Articles</a>
+        <a href="#section3">Photos</a>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Charts</h2>
+            <div class="chart">
+                <p>Chart Content</p>
+            </div>
+        </section>
+        <section id="section2">
+            <h2>Articles</h2>
+            <input type="search" class="search" placeholder="search articles..">
+            <article>
+                <h3>Article 1</h3>
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <p>Article goes here</p>
+            </article>
+            <article>
+                <h3>Article 2</h3>
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <p>Article goes here</p>
+            </article>
+        </section>
+        <section id="section3">
+            <h2>
+                Photos
+            </h2>
+            <input type="search" class="search" placeholder="Search photos..">
+            <article>
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <p>Photo description goes here</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Extended Dashboard</p>
+    </footer>
+
+    
+</body>
+</html>

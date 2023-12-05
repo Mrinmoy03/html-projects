@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interesting Fact</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f8f8;
+      }
+      header {
+        background-color: #860909;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+      .facts {
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        text-align: center;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+        margin-top: 50px;
+    
+      }
+      .imggrid {
+       
+        width: 200px;
+        height: 200px;
+        
+        margin-top: 2rem;
+      }
+      ul{
+        list-style: none;
+        text-align: left;
+        margin-top: 20px;
+        color:  #333;;
+      }
+      li{
+        font-size: 25px
+      }
+      h2{
+        font-size: 30px;
+      }
+      h1{
+        font-size: 42px;
+      }
+      .border{
+        border-radius: 20px;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.5); ;
+      }
+      footer{
+        background-color: #860909;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;}
+            a{
+                color:white;
+                text-decoration: none;
+            }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Interesting Facts</h1>
+    </header>
+    <div class="facts">
+      <div class="spaceFact border">
+        <h2>Space Facts</h2>
+        <img
+          src="https://apod.nasa.gov/apod/image/1305/ngc6960_FinalPugh.jpg"
+          alt="space"
+          class="imggrid"
+        />
+        <ul>
+          <li>Neutron stars can spin at a rate of 600 rotations per second</li>
+          <li>Space is completely silent</li>
+          <li>There is an uncountable number of stars in the known universe</li>
+          <li>
+            The Apollo astronauts' footprints on the moon will probably stay
+            there for at least 100 million years
+          </li>
+          <li>99 percent of our solar system's mass is the sun</li>
+          <li>
+            More energy from the sun hits Earth every hour than the planet uses
+            in a year
+          </li>
+        </ul>
+      </div>
+      <div class="earthFact border">
+        <h2>Earth</h2>
+        <img
+          src="https://images.pexels.com/photos/41953/earth-blue-planet-globe-planet-41953.jpeg?cs=srgb&dl=pexels-pixabay-41953.jpg&fm=jpg"
+          alt="earth"
+          class="imggrid"
+        />
+        <ul>
+          <li>Earth isn’t actually round</li>
+          <li>Coral reefs are Earth’s largest living structure</li>
+          <li>Earth has a squishy interior</li>
+          <li>Antarctica is home to the largest ice sheet on Earth</li>
+          <li>
+            Europe is the second smallest continent in size but the third
+            largest in population
+          </li>
+          <li>Atacama is the driest place on Earth</li>
+          <li>Earth’s magnetic pole is creeping westward</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+        &copy; 2023 Mrinmoy Bhattacharjee | Contact:
+        <a href="mailto:mrinmoy.0313@gmail.com">mrinmoy.0313@gmail.com</a>
+      </footer>
+  </body>
+</html>

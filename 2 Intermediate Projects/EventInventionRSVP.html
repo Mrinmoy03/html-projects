@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <style>
+          body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #3081D0;
+            color: #fff;
+          }
+          header{
+            background-color: #FFF5C2;
+            color:#6DB9EF;
+            padding: 20px 0; 
+            text-align: center;
+          }
+          h1{
+            font-size: 50px;
+          }
+          section{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            color: #3081D0;
+            background-color:#F4F27E ;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(7, 18, 219, 0.689);
+          }
+          form{
+            margin-top: 20px;
+          }
+          label{
+            display: block;
+            margin-top: 10px;
+          }
+          input, textarea{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 4px;
+          }
+          button{
+            margin-top: 10px;
+            background-color: #3081D0;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          button:hover{
+            background-color: #0b64bd;
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>You're Invited</h1>
+        <p>Join Us For a Special Event</p>
+    </header>
+    <section>
+        <h2>Event Details</h2>
+        <p>Date: December 2, 2023</p>
+        <p>Time: 6:00 PM</p>
+        <p>Location:Event Location</p>
+        <h2>RSVP</h2>
+        <form  method="get">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="attendees">Number of Attemdees</label>
+            <input type="number" id="attendees" name="attendees" required>
+
+            <label for="message">Additional Message (optional):</label>
+            <textarea name="message" id="message"  rows="4"></textarea>
+            <button type="submit">RSVP</button>
+        </form>
+    </section>
+</body>
+</html>
